@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Homescreencontainer extends StatelessWidget {
-  const Homescreencontainer({super.key});
+class Profilefollowingscreencontainer extends StatelessWidget {
+  const Profilefollowingscreencontainer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return GestureDetector(
+                  // onTap: () => Navigator.push(context,MaterialPageRoute(builder: (_)=>Personoverview())),
+                  child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5),
                   child: Container(
-                    height: 230.h,
+                    height: 161.h,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(18.r),
@@ -26,7 +28,7 @@ class Homescreencontainer extends StatelessWidget {
                             leading: Stack(
                               clipBehavior: Clip.none,
                               children: [
-                             Image.asset('assets/images/img2.png',height:50.h,width:50.w,),
+                                Image.asset('assets/images/img2.png',height:50.h,width:50.w,),
                                 Positioned(
                                     top: 35.h,
                                     left: -2,
@@ -96,10 +98,11 @@ class Homescreencontainer extends StatelessWidget {
                             color: Colors.grey,
                           ),
                         ),
+                        SizedBox(height: 3.h,),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: SizedBox(
-                            height: 50.h,
+                            height: 46.h,
                             width: double.infinity,
                             child: Container(
                               child: Row(
@@ -177,54 +180,10 @@ class Homescreencontainer extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          height: 10.h,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15),
-                          child: Text('Profit and loss',
-                              style: GoogleFonts.poppins(
-                                color: Color(0xFF616161),
-                                fontSize: 10.sp,
-                                fontWeight: FontWeight.w500,
-                                height: 0,
-                              )),
-                        ),
-                        SizedBox(
-                          height: 5.h,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal:15),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text('\$ 7135.01',
-                                  style: GoogleFonts.poppins(
-                                    color: Color(0xFFFAFAFA),
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.w500,
-                                    height: 0,
-                                  )),
-                                    Text('\$ 0.00',
-                                  style: GoogleFonts.poppins(
-                                    color: Color(0xFFFAFAFA),
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.w500,
-                                    height: 0,
-                                  )),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15),
-                          child: Divider(
-                            thickness: 2,
-                            color: Color(0xFF388E3c),
-                          ),
-                        ),
+                       
                       ],
                     ),
                   ),
-                );
+                ));
   }
 }

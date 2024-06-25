@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trading_app/Ui/Components/Bottomnavigation.dart';
 
-
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
 
@@ -17,9 +16,9 @@ class _LoginpageState extends State<Loginpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF181818),
+      backgroundColor: Color(0xFF1E1E1E),
       appBar: AppBar(
-        backgroundColor: Color(0xFF181818),
+        backgroundColor: Color(0xFF1E1E1E),
         leading: IconButton(
             onPressed: () {},
             icon: Icon(
@@ -41,10 +40,16 @@ class _LoginpageState extends State<Loginpage> {
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(38.r),
                     topRight: Radius.circular(38.r)),
+                border: Border(
+                  left: BorderSide(),
+                  top: BorderSide(width: .2.w),
+                  right: BorderSide(),
+                  bottom: BorderSide(),
+                ),
                 color: Colors.black.withOpacity(0.07999999821186066),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +83,7 @@ class _LoginpageState extends State<Loginpage> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.r),
-                            color: Color(0xFF1A1A1A)),
+                            color: Color(0xFF262626)),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           child: Center(
@@ -86,16 +91,13 @@ class _LoginpageState extends State<Loginpage> {
                               style: TextStyle(color: Colors.white),
                               decoration: InputDecoration(
                                   border: InputBorder.none,
-                                 
                                   labelText: 'User Name',
-                                  labelStyle:  GoogleFonts.poppins(
+                                  labelStyle: GoogleFonts.poppins(
                                     color: Color(0xFF7C7C7C),
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w400,
                                     height: 0.10,
-                                  )
-                                  ),
-                                  
+                                  )),
                             ),
                           ),
                         ),
@@ -108,7 +110,7 @@ class _LoginpageState extends State<Loginpage> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8.r),
-                            color: Color(0xFF1A1A1A)),
+                            color: Color(0xFF262626)),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 20),
                           child: Center(
@@ -154,7 +156,10 @@ class _LoginpageState extends State<Loginpage> {
                         height: 50.h,
                       ),
                       GestureDetector(
-                        onTap: () => Navigator.push(context,MaterialPageRoute(builder: (_)=>Bottomnavigation())),
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => Bottomnavigation())),
                         child: Container(
                           height: 50.h,
                           width: double.infinity,
@@ -192,7 +197,7 @@ class _LoginpageState extends State<Loginpage> {
                       Row(
                         children: [
                           Checkbox(
-                            activeColor:Color(0xFF7E57C2) ,
+                            activeColor: Color(0xFF7E57C2),
                             value: ischecked,
                             onChanged: (value) {
                               setState(() {

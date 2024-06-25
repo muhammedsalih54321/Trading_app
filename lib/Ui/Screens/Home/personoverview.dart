@@ -21,9 +21,9 @@ class _PersonoverviewState extends State<Personoverview> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        backgroundColor: Color(0xFF181818),
+        backgroundColor:Color(0xFF1E1E1E),
         appBar: AppBar(
-          backgroundColor: Color(0xFF181818),
+          backgroundColor: Color(0xFF1E1E1E),
           leading: IconButton(
               onPressed: () {
                 Navigator.pop(context);

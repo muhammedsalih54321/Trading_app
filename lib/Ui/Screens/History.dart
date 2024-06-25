@@ -13,16 +13,16 @@ class _HistoryscreenState extends State<Historyscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF181818),
+      backgroundColor:Color(0xFF1E1E1E),
       body: SafeArea(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 20.h,
+            height: 30.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Text('TOTAL  PROFIT',
                 style: GoogleFonts.poppins(
                   color: Color(0xFF616161),
@@ -36,7 +36,7 @@ class _HistoryscreenState extends State<Historyscreen> {
             height: 12.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Stack(
               clipBehavior: Clip.none,
               children: [
@@ -74,7 +74,7 @@ class _HistoryscreenState extends State<Historyscreen> {
             height: 20.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Text('CLOSED POSITIONS',
                 style: GoogleFonts.poppins(
                   color: Colors.white,
@@ -88,7 +88,7 @@ class _HistoryscreenState extends State<Historyscreen> {
             height: 50.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -132,123 +132,154 @@ class _HistoryscreenState extends State<Historyscreen> {
                   padding: const EdgeInsets.symmetric(vertical: 5),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 179, 173, 156),
                         border: Border(
-                            bottom: BorderSide(width: 1, color: Color(0xFF282828)),)),
+                      bottom: BorderSide(width: 1, color: Color(0xFF282828)),
+                    )),
                     height: 75.h,
                     width: double.infinity,
                     child: Padding(
-                           padding: const EdgeInsets.symmetric(horizontal: 20),
+                      padding: const EdgeInsets.symmetric(horizontal:15),
                       child: Container(
                         width: double.infinity,
-                        height: 75.h,
-                        color: const Color.fromARGB(255, 235, 138, 138),
-                        child:  Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  children: [
-                                                    Column(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .spaceBetween,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Text('XAUUSD',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(
-                                                                  0xFFE4E4E4),
-                                                              fontSize: 16.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              height: 0,
-                                                            )),
-                                                        SizedBox(
-                                                          height: 2.h,
-                                                        ),
-                                                        Text('Entry price',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(
-                                                                  0xFF616161),
-                                                              fontSize: 14.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w400,
-                                                              height: 0,
-                                                            )),
-                                                      ],
-                                                    ),
-                                                    Column(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .spaceBetween,
-                                                      children: [
-                                                        Text('65,604.5',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(
-                                                                  0xFFE4E4E4),
-                                                              fontSize: 16.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              height: 0,
-                                                            )),
-                                                        Text('Exit price',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(
-                                                                  0xFF616161),
-                                                              fontSize: 14.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w400,
-                                                              height: 0,
-                                                            ))
-                                                      ],
-                                                    ),
-                                                    Column(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .spaceBetween,
-                                                      children: [
-                                                        Text('1.45%',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(0xFF388E3C),
-                                                              fontSize: 16.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500,
-                                                              height: 0,
-                                                            )),
-                                                        Text('ROL',
-                                                            style: GoogleFonts
-                                                                .poppins(
-                                                              color: Color(
-                                                                  0xFF616161),
-                                                              fontSize: 14.sp,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w400,
-                                                              height: 0,
-                                                            ))
-                                                      ],
-                                                    )
-                                                  ],
-                                                ),
-                                            
+                        child: SizedBox(
+                          height: 70.h,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('XAUUSD',
+                                      style: GoogleFonts.poppins(
+                                        color: Colors.white,
+                                        fontSize: 12.sp,
+                                        fontWeight: FontWeight.w500,
+                                        letterSpacing: -0.32,
+                                      )),
+                                  SizedBox(
+                                    height: 5.h,
+                                  ),
+                                  Text('VOLUME',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                  SizedBox(
+                                    height: 2.h,
+                                  ),
+                                  Text('VOLUME',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 19.h,
+                                    width: 35.w,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(17.r),
+                                        color: Color(0x2B069334)),
+                                    child: Center(
+                                      child: Text('BUY',
+                                          style: GoogleFonts.poppins(
+                                            color: Color(0xFF388E3C),
+                                            fontSize: 10.sp,
+                                            fontWeight: FontWeight.w500,
+                                            height: 0,
+                                            letterSpacing: -0.32,
+                                          )),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 5.h,
+                                  ),
+                                  Text('close time',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                  SizedBox(
+                                    height: 2.h,
+                                  ),
+                                  Text('2024-06-13 12:30:12',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('134.40',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF388E3C),
+                                        fontSize: 16.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                      )),
+                                  SizedBox(
+                                    height: 5.h,
+                                  ),
+                                  Text('close price',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                  SizedBox(
+                                    height: 2.h,
+                                  ),
+                                  Text('2330.92',
+                                      style: GoogleFonts.poppins(
+                                        color: Color(0xFF616161),
+                                        fontSize: 10.sp,
+                                        fontWeight: FontWeight.w500,
+                                        height: 0,
+                                        letterSpacing: -0.32,
+                                      )),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
                 );
               },
             ),
+          ),
+          SizedBox(
+            height: 10.h,
+          ),
+          Center(
+            child: Text('No more data available',
+                style: GoogleFonts.poppins(
+                  color: Color(0xFF616161),
+                  fontSize: 12,
+                  fontWeight: FontWeight.w400,
+                  height: 0,
+                )),
           )
         ],
       )),

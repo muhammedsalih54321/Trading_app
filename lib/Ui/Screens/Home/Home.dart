@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trading_app/Ui/Components/Homescreencontainer.dart';
-import 'package:trading_app/Ui/Screens/personoverview.dart';
+import 'package:trading_app/Ui/Screens/Home/personoverview.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -16,10 +16,10 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF181818),
+      backgroundColor: Color(0xFF1E1E1E),
       
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
             SafeArea(
@@ -56,7 +56,7 @@ class _HomescreenState extends State<Homescreen> {
               height: 20.h,
             ),
             Container(
-              height: 58.h,
+              height: 48.h,
               width: double.infinity,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8.r),

@@ -10,6 +10,8 @@ class Marketscreen extends StatefulWidget {
 class _MarketscreenState extends State<Marketscreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+         backgroundColor:Color(0xFF1E1E1E),
+    );
   }
 }

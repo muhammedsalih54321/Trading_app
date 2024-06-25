@@ -7,9 +7,9 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trading_app/Ui/Screens/History.dart';
-import 'package:trading_app/Ui/Screens/Home.dart';
+import 'package:trading_app/Ui/Screens/Home/Home.dart';
 import 'package:trading_app/Ui/Screens/Market.dart';
-import 'package:trading_app/Ui/Screens/Profile.dart';
+import 'package:trading_app/Ui/Screens/Profile/Profile.dart';
 
 class Bottomnavigation extends StatefulWidget {
   const Bottomnavigation({super.key});

@@ -20,7 +20,7 @@ class _OrderState extends State<Order> {
                   length: 2,
                   child: Container(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
                       child: Column(
                         children: [
                           SizedBox(
