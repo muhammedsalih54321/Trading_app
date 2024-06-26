@@ -21,7 +21,7 @@ class _PersonoverviewState extends State<Personoverview> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        backgroundColor:Color(0xFF1E1E1E),
+        backgroundColor: Color(0xFF1E1E1E),
         appBar: AppBar(
           backgroundColor: Color(0xFF1E1E1E),
           leading: IconButton(
@@ -31,6 +31,7 @@ class _PersonoverviewState extends State<Personoverview> {
               icon: Icon(
                 Icons.arrow_back_ios_new,
                 color: Colors.white,
+                 size: 20.sp,
               )),
           actions: [
             IconButton(
@@ -38,16 +39,18 @@ class _PersonoverviewState extends State<Personoverview> {
                 icon: Icon(
                   BootstrapIcons.share,
                   color: Colors.white,
+                  size: 20.sp,
                 ))
           ],
         ),
         body: Column(
           children: [
-            SizedBox(
-              height: 10.h,
-            ),
             ListTile(
-                leading: Image.asset('assets/images/img2.png'),
+                leading: Image.asset(
+                  'assets/images/img2.png',
+                  height: 50.h,
+                  width: 50.w,
+                ),
                 title: Text(
                   'BGUSER -H3LA8VRR',
                   style: GoogleFonts.poppins(
@@ -107,7 +110,7 @@ class _PersonoverviewState extends State<Personoverview> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('equity (USDT)',
+                              Text('Equity (USDT)',
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF797979),
                                     fontSize: 12.sp,
@@ -126,7 +129,7 @@ class _PersonoverviewState extends State<Personoverview> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('total orders',
+                              Text('Total Orders',
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF797979),
                                     fontSize: 12.sp,
@@ -145,7 +148,7 @@ class _PersonoverviewState extends State<Personoverview> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('days joined',
+                              Text('Days Joined',
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF797979),
                                     fontSize: 12.sp,
@@ -172,7 +175,7 @@ class _PersonoverviewState extends State<Personoverview> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Trading freq',
+                              Text('Trading Freq',
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF797979),
                                     fontSize: 12.sp,
@@ -194,7 +197,7 @@ class _PersonoverviewState extends State<Personoverview> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Profit-sharing ratio',
+                              Text('Profit-Sharing Ratio',
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF797979),
                                     fontSize: 12.sp,
@@ -221,7 +224,7 @@ class _PersonoverviewState extends State<Personoverview> {
               height: 20.h,
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 100),
+              padding: const EdgeInsets.only(right: 80),
               child: TabBar(
                 tabs: [
                   Tab(

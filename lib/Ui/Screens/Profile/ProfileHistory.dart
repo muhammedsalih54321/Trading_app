@@ -58,7 +58,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                   ),
                 ),
                 SizedBox(
-                  width: 67.w,
+                  width: 67.6.w,
                 ),
                 DropdownButton<String>(
                   hint: Text('Last 7 days ',
@@ -150,7 +150,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                   height: 68.h,
                   width: double.infinity,
                   child: ListTile(
-                    leading: Image.asset(img[index]),
+                    leading: Image.asset(img[index],height: 50.h,width: 50.w,),
                     title: Text(
                       'Ethereum',
                       style: GoogleFonts.poppins(
@@ -173,7 +173,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         SizedBox(
-                          height: 8.h,
+                          height: 12.h,
                         ),
                         Text(
                           '\$503.12',
@@ -183,6 +183,9 @@ class _ProfilehistoryState extends State<Profilehistory> {
                             fontWeight: FontWeight.w500,
                             height: 0,
                           ),
+                        ),
+                         SizedBox(
+                          height: 2.h,
                         ),
                         Text(
                           '50 ETH',

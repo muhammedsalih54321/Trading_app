@@ -29,6 +29,7 @@ class _ProfilepagetileState extends State<Profilepagetile> {
       trailing: Icon(
         Icons.keyboard_arrow_right_outlined,
         color: Color(0xFF7C7C7C),
+        
       ),
     );
   }

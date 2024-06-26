@@ -17,13 +17,12 @@ class _HomescreenState extends State<Homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF1E1E1E),
-      
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            SafeArea(
-                child: Row(
+            SizedBox(height: 60.h,),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
@@ -51,7 +50,7 @@ class _HomescreenState extends State<Homescreen> {
                   ],
                 )
               ],
-            )),
+            ),
             SizedBox(
               height: 20.h,
             ),
@@ -86,14 +85,20 @@ class _HomescreenState extends State<Homescreen> {
               ),
             ),
             Expanded(
-                child: ListView.builder(padding: EdgeInsets.zero,
-              itemCount: 10,
-              itemBuilder: (context, index) {
+                child: ListView.builder(
+                              padding: EdgeInsets.zero,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
                 return GestureDetector(
-                  onTap: () => Navigator.push(context,MaterialPageRoute(builder: (_)=>Personoverview())),
-                  child: Homescreencontainer());
-              },
-            ))
+                    onTap: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (_) => Personoverview())),
+                    child: Homescreencontainer());
+                              },
+                            )
+            
+            ,
+            ),
+         
           ],
         ),
       ),

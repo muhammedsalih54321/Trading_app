@@ -23,7 +23,7 @@ class History extends StatelessWidget {
                     height: 10.h,
                   ),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         height: 26.h,

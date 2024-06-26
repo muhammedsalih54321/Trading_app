@@ -21,9 +21,7 @@ class Profilefollowingscreencontainer extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
-                          height: 10.h,
-                        ),
+                       
                         ListTile(
                             leading: Stack(
                               clipBehavior: Clip.none,
@@ -81,7 +79,7 @@ class Profilefollowingscreencontainer extends StatelessWidget {
                                   color: Color(0xFF7E57C2)),
                               child: Center(
                                 child: Text(
-                                  'follow',
+                                  'followed',
                                   style: GoogleFonts.poppins(
                                     color: Colors.white,
                                     fontSize: 10.sp,
@@ -102,7 +100,7 @@ class Profilefollowingscreencontainer extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: SizedBox(
-                            height: 46.h,
+                            height: 44.5.h,
                             width: double.infinity,
                             child: Container(
                               child: Row(

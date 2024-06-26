@@ -30,17 +30,17 @@ class Copierstile extends StatelessWidget {
                 Text('PERSON',
                     style: GoogleFonts.poppins(
                       color: Color(0xFFFEFEFE),
-                      fontSize: 14,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w600,
                       height: 0.12,
                     )),
                 SizedBox(
                   height: 20.h,
                 ),
-                Text('total vol: 33,22.55589USDT',
+                Text('Total Vol: 33,22.55589USDT',
                     style: GoogleFonts.poppins(
                       color: Color(0xFF616161),
-                      fontSize: 12,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       height: 0.14,
                     )),
@@ -50,7 +50,7 @@ class Copierstile extends StatelessWidget {
                 Text('Profit +720.0779USDT',
                     style: GoogleFonts.poppins(
                       color: Color(0xFF388E3C),
-                      fontSize: 12,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       height: 0.14,
                     )),

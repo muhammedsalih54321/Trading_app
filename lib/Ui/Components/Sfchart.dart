@@ -28,7 +28,7 @@ class _SfchartState extends State<Sfchart> {
       alignment: Alignment.center,
       children: [
         Positioned(
-          top: 80,
+          top: 70,
           child: Column(
             children: [
               Text('CRIPTOBITE',

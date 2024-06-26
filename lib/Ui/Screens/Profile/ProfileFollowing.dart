@@ -34,6 +34,7 @@ class _ProfilefollowingState extends State<Profilefollowing> {
                 height: 0,
               ),
             ),
+            SizedBox(height: 5.h,),
             Row(
               children: [
                 Text(
@@ -46,7 +47,7 @@ class _ProfilefollowingState extends State<Profilefollowing> {
                   ),
                 ),
                 Text(
-                  ' person',
+                  ' Person',
                   style: GoogleFonts.poppins(
                     color: Color(0xFFE4E4E4),
                     fontSize: 12.sp,

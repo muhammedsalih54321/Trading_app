@@ -23,7 +23,7 @@ class Current extends StatelessWidget {
                     height: 10.h,
                   ),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         height: 26.h,
@@ -76,7 +76,7 @@ class Current extends StatelessWidget {
                           child: Text('cross',
                               style: GoogleFonts.poppins(
                                 color: Color(0xEE5E5E5E),
-                                fontSize: 12,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 height: 0,
                               )),

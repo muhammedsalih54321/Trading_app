@@ -41,7 +41,7 @@ class _OverviewState extends State<Overview> {
                   size: 18.sp,
                 ),
                 SizedBox(
-                  width: 110.w,
+                  width: 126.2.w,
                 ),
                 DropdownButton<String>(
                   dropdownColor: Colors.black,
@@ -96,7 +96,7 @@ class _OverviewState extends State<Overview> {
             ),
             Sfchart(),
             SizedBox(
-              height: 20.h,
+              height: 30.h,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -12,7 +12,13 @@ class Loginpage extends StatefulWidget {
 }
 
 class _LoginpageState extends State<Loginpage> {
+  var isobscure;
   bool ischecked = false;
+  @override
+  void initState() {
+  isobscure=true;
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,12 +131,22 @@ class _LoginpageState extends State<Loginpage> {
                                     fontWeight: FontWeight.w400,
                                     height: 0.10,
                                   ),
-                                  suffixIcon: Icon(
-                                    BootstrapIcons.eye,
-                                    color: Colors.white,
-                                    size: 20.sp,
-                                  )),
-                              obscureText: true,
+                                  suffixIcon: IconButton(
+                                      onPressed: () {
+                                        setState(() {
+                                          isobscure=!isobscure;
+                                        });
+                                      },
+                                      icon:isobscure? Icon(
+                                        BootstrapIcons.eye,
+                                        color: Colors.white,
+                                        size: 20.sp,
+                                      ):Icon(
+                                        BootstrapIcons.eye_slash,
+                                        color: Colors.white,
+                                        size: 20.sp,
+                                      ))),
+                              obscureText: isobscure,
                             ),
                           ),
                         ),

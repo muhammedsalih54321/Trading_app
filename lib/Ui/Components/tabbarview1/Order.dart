@@ -31,7 +31,7 @@ class _OrderState extends State<Order> {
                             children: [
                               Container(
                                 height: 38.h,
-                                width: 168.w,
+                                width: 172.w,
                                 child: Center(
                                   child: TabBar(
                                     labelColor: Color(0xFFB1B1B1),
@@ -88,7 +88,7 @@ class _OrderState extends State<Order> {
                                     child: Text('Details',
                                         style: GoogleFonts.poppins(
                                           color: Color(0xFF616161),
-                                          fontSize: 14,
+                                          fontSize: 14.sp,
                                           fontWeight: FontWeight.w400,
                                           height: 0,
                                         )),

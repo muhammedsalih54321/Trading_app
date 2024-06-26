@@ -170,7 +170,7 @@ class _HistoryscreenState extends State<Historyscreen> {
                                   SizedBox(
                                     height: 2.h,
                                   ),
-                                  Text('VOLUME',
+                                  Text('0.6',
                                       style: GoogleFonts.poppins(
                                         color: Color(0xFF616161),
                                         fontSize: 10.sp,
@@ -204,7 +204,7 @@ class _HistoryscreenState extends State<Historyscreen> {
                                   SizedBox(
                                     height: 5.h,
                                   ),
-                                  Text('close time',
+                                  Text('Close time',
                                       style: GoogleFonts.poppins(
                                         color: Color(0xFF616161),
                                         fontSize: 10.sp,
@@ -238,7 +238,7 @@ class _HistoryscreenState extends State<Historyscreen> {
                                   SizedBox(
                                     height: 5.h,
                                   ),
-                                  Text('close price',
+                                  Text('Close price',
                                       style: GoogleFonts.poppins(
                                         color: Color(0xFF616161),
                                         fontSize: 10.sp,

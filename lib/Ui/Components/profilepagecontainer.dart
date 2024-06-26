@@ -10,6 +10,7 @@ class Profilepagecontainer extends StatelessWidget {
     return  Stack(
             children: [
               Container(
+               
                 width: double.infinity.w,
                 height: 155.h,
                 decoration: ShapeDecoration(
@@ -21,9 +22,9 @@ class Profilepagecontainer extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 15.h,
+                top: 20.h,
                 left: 20.w,
-                child: Text('holding value',
+                child: Text('Holding value',
                     style: GoogleFonts.montserrat(
                       color: Color(0xFF616161),
                       fontSize: 12.sp,
@@ -32,7 +33,7 @@ class Profilepagecontainer extends StatelessWidget {
                     )),
               ),
               Positioned(
-                top: 48.h,
+                top: 53.h,
                 left: 20.w,
                 child: Text('\$ 7,625.00',
                     style: GoogleFonts.montserrat(
@@ -44,7 +45,7 @@ class Profilepagecontainer extends StatelessWidget {
                     )),
               ),
               Positioned(
-                  top: 43.h,
+                  top:50.h,
                   left: 150.w,
                   child: Image.asset(
                     'assets/images/img13.png',
@@ -52,7 +53,7 @@ class Profilepagecontainer extends StatelessWidget {
                     width: 14.67.w,
                   )),
               Positioned(
-                top: 48.h,
+                top: 55.h,
                 left: 170.w,
                 child: Text('\$ 105.00',
                     style: GoogleFonts.montserrat(
@@ -64,9 +65,9 @@ class Profilepagecontainer extends StatelessWidget {
                     )),
               ),
               Positioned(
-                top: 78.h,
+                top: 88.h,
                 left: 20.w,
-                child: Text('holding value',
+                child: Text('Holding value',
                     style: GoogleFonts.montserrat(
                       color: Color(0xFF616161),
                       fontSize: 12.sp,
@@ -75,7 +76,7 @@ class Profilepagecontainer extends StatelessWidget {
                     )),
               ),
               Positioned(
-                top: 98.h,
+                top: 108.h,
                 left: 20.w,
                 child: Text('\$5,550.00',
                     style: GoogleFonts.montserrat(
@@ -86,8 +87,8 @@ class Profilepagecontainer extends StatelessWidget {
                     )),
               ),
               Positioned(
-                top: 13.h,
-                left: 300.w,
+                top: 20.h,
+                left: 280.w,
                 child: Container(
                   height: 19.h,
                   width: 56.w,
