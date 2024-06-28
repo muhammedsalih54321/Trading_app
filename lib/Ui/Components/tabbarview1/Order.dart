@@ -31,7 +31,7 @@ class _OrderState extends State<Order> {
                             children: [
                               Container(
                                 height: 38.h,
-                                width: 172.w,
+                                width: 195.w,
                                 child: Center(
                                   child: TabBar(
                                     labelColor: Color(0xFFB1B1B1),

@@ -20,9 +20,7 @@ class _OverviewState extends State<Overview> {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            SizedBox(
-              height: 20.h,
-            ),
+          
             Row(
               children: [
                 Text('Asset allocation',

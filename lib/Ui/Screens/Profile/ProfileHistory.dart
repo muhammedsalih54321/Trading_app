@@ -58,7 +58,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                   ),
                 ),
                 SizedBox(
-                  width: 67.6.w,
+                  width: 80.w,
                 ),
                 DropdownButton<String>(
                   hint: Text('Last 7 days ',
@@ -124,7 +124,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                     color: Color(0xFF616161),
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w400,
-                    height: 0,
+                    height: -1
                   )),
               Text(
                 '\$105.00',
@@ -132,7 +132,7 @@ class _ProfilehistoryState extends State<Profilehistory> {
                   color: Color(0xFFE4E4E4),
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
-                  height: 0,
+                  height: -1,
                 ),
               ),
             ]),

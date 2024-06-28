@@ -44,6 +44,7 @@ dependencies:
   glassmorphism: ^3.0.0
   pie_chart: ^5.4.0
   webview_flutter: ^4.8.0
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:

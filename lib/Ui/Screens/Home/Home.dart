@@ -1,7 +1,10 @@
 import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trading_app/Bloc/Tradersdata/tradersdata_bloc.dart';
+import 'package:trading_app/Repository/Model/traders_data.dart';
 import 'package:trading_app/Ui/Components/Homescreencontainer.dart';
 import 'package:trading_app/Ui/Screens/Home/personoverview.dart';
 
@@ -13,6 +16,12 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
+  late List<Tradersdatamodel> tradersdata;
+  @override
+  void initState() {
+   BlocProvider.of<TradersdataBloc>(context).add(Fetchtradersdata());
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +30,9 @@ class _HomescreenState extends State<Homescreen> {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            SizedBox(height: 60.h,),
+            SizedBox(
+              height: 60.h,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -84,21 +95,47 @@ class _HomescreenState extends State<Homescreen> {
                 ),
               ),
             ),
-            Expanded(
-                child: ListView.builder(
-                              padding: EdgeInsets.zero,
-                              itemCount: 10,
-                              itemBuilder: (context, index) {
-                return GestureDetector(
-                    onTap: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (_) => Personoverview())),
-                    child: Homescreencontainer());
-                              },
-                            )
-            
-            ,
+            BlocBuilder<TradersdataBloc, TradersdataState>(
+              builder: (context, state) {
+                if (state is Tradersblocloading) {
+                  return Center(child: CircularProgressIndicator(),);
+                  
+                }if (state is Tradersblocerror) {
+                   return RefreshIndicator(
+                      child: SingleChildScrollView(
+                        physics: BouncingScrollPhysics(),
+                        child: SizedBox(
+                          height: MediaQuery.of(context).size.height * .9,
+                          child: Center(child: Text('Oops something went wrong')),
+                        ),
+                      ),
+                      onRefresh: () async {
+                        return BlocProvider.of<TradersdataBloc>(context)
+                            .add(Fetchtradersdata());
+                      },
+                    );
+                }if (state is Tradersblocloaded) {
+                  tradersdata=BlocProvider.of<TradersdataBloc>(context).tradersdatamodel;
+                   return Expanded(
+                  child: ListView.builder(
+                    padding: EdgeInsets.zero,
+                    itemCount:tradersdata.length,
+                    itemBuilder: (context, index) {
+                      return GestureDetector(
+                          onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => Personoverview())),
+                          child: Homescreencontainer(name: tradersdata[index].name.toString(),));
+                    },
+                  ),
+                );
+                }else{
+                  return SizedBox();
+                }
+               
+              },
             ),
-         
           ],
         ),
       ),
